@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<InfDeutePICAResponse xmlns="http://pica.gencat.net/atc/schemes/InfDeutePICAResponse" xmlns:ns1="http://gencat.net/scsp/esquemes/PicaError" xmlns:atc="http://pica.gencat.net/atc/schemes/InfDeutePICARequest">
+	<Informacio>
+		<Csv>String</Csv>
+		<DataCaducitat>2001-12-17T09:30:47.0Z</DataCaducitat>
+		<Document>String</Document>
+		<FormatDocument>String</FormatDocument>
+		<ImportTotal>0.0</ImportTotal>
+		<Resposta>0</Resposta>
+	</Informacio>
+	<atc:InfDeutePICARequest>
+		<atc:Idioma>String</atc:Idioma>
+		<atc:Nom>String</atc:Nom>
+		<atc:NomComplet>String</atc:NomComplet>
+		<atc:Cognom1>String</atc:Cognom1>
+		<atc:Cognom2>String</atc:Cognom2>
+		<atc:NumeroDocument>String</atc:NumeroDocument>
+		<atc:TipusDocumentacio>String</atc:TipusDocumentacio>
+	</atc:InfDeutePICARequest>
+	<ns1:PICAError>
+		<ns1:CodiError>String</ns1:CodiError>
+		<ns1:Error>String</ns1:Error>
+		<ns1:Descripcio>String</ns1:Descripcio>
+		<ns1:Causa>String</ns1:Causa>
+	</ns1:PICAError>
+</InfDeutePICAResponse>

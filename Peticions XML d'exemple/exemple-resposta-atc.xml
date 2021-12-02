@@ -1,0 +1,91 @@
+<res:Respuesta xmlns:res="http://gencat.net/scsp/esquemes/respuesta">
+	<res:Atributos>
+		<res:CodigoCertificado>ATC_INF_DEUTES_TMP</res:CodigoCertificado>
+		<res:CodigoProducto>ATC</res:CodigoProducto>
+		<res:IdPeticion>ATC_0001</res:IdPeticion>
+		<res:IdSolicitanteOriginal/>
+		<res:NomSolicitanteOriginal/>
+		<res:NumElementos>1</res:NumElementos>
+		<res:TimeStamp>2009-08-19T15:52:26.44+02:00</res:TimeStamp>
+		<res:Emisor>
+			<res:NifEmisor>Q0801175A</res:NifEmisor>
+			<res:NombreEmisor>CAOC</res:NombreEmisor>
+		</res:Emisor>
+		<res:Estado>
+			<res:CodigoEstado>0003</res:CodigoEstado>
+			<res:CodigoEstadoSecundario/>
+			<res:LiteralError>OK</res:LiteralError>
+			<res:TiempoEstimadoRespuesta>0</res:TiempoEstimadoRespuesta>
+		</res:Estado>
+		<res:Funcionario>
+			<res:NombreCompletoFuncionario>FUNCIONARI</res:NombreCompletoFuncionario>
+			<res:NifFuncionario>NIF</res:NifFuncionario>
+			<res:EMailFuncionario/>
+			<res:CertificadoDigital/>
+		</res:Funcionario>
+	</res:Atributos>
+	<res:Transmisiones>
+		<res:TransmisionDatos>
+			<res:DatosGenericos>
+				<res:Emisor>
+					<res:NombreEmisor>CAOC</res:NombreEmisor>
+					<res:NifEmisor>Q0801175A</res:NifEmisor>
+				</res:Emisor>
+				<res:Solicitante>
+					<res:IdentificadorSolicitante>9821920002</res:IdentificadorSolicitante>
+					<res:NombreSolicitante>CAOC</res:NombreSolicitante>
+					<res:Finalidad>PROVES</res:Finalidad>
+					<res:Consentimiento>Si</res:Consentimiento>
+					<res:Funcionario>
+						<res:NombreCompletoFuncionario>FUNCIONARI</res:NombreCompletoFuncionario>
+						<res:NifFuncionario>NIF</res:NifFuncionario>
+						<res:EMailFuncionario/>
+						<res:CertificadoDigital/>
+					</res:Funcionario>
+				</res:Solicitante>
+				<res:Titular>
+					<res:TipoDocumentacion>NIF</res:TipoDocumentacion>
+					<res:Documentacion>35073919T</res:Documentacion>
+					<res:NombreCompleto>CRISTINA SIALO SEAHE</res:NombreCompleto>
+					<res:Nombre>CRISTINA</res:Nombre>
+					<res:Apellido1>SIALO</res:Apellido1>
+					<res:Apellido2>SEAHE</res:Apellido2>
+				</res:Titular>
+				<res:Transmision>
+					<res:CodigoCertificado>ATC_INF_DEUTES_TMP</res:CodigoCertificado>
+					<res:FechaGeneracion/>
+					<res:IdSolicitud>1</res:IdSolicitud>
+					<res:IdTransmision>EXPEDIENT</res:IdTransmision>
+				</res:Transmision>
+			</res:DatosGenericos>
+			<res:DatosEspecificos>
+				<inf:InfDeutePICAResponse
+xmlns:inf="http://pica.gencat.net/atc/schemes/InfDeutePICAResponse">
+					<inf:Informacio>
+						<inf:Csv>G0090000000662GELYS3</inf:Csv>
+						<inf:DataCaducitat xsi:nil="true"/>
+						<inf:Document>JVBERi0xLjQKJeLjz9MKNCAwIG9iaiA8PC9GaWx0ZXIvRmxhdG
+VEZWNvZGUvTGVuZ3RoIDMwMD4+c3RyZWFtCniclZJPS8NAEMXv+RRz1IOTmf2/x0261khtahJEoTehB6FIv
+//FSROhBQl2A7t7mLe/ MzI4ODkgMDAwMDAgbiAKdHJhaWxlcgo8PC9JRCBbPGNiYTQ1NzNmZmVmOTY2YmE3
+(. . .)
+YWJiNjRmY2Zk NmUyZDk1PjwyZjFhZTg0YjFkNzNlMmY4MjdiZjU5N2FmOGQxYWRkZj5dL1Jvb3QgMjMgMCBS
+L1Np emUgMjUvSW5mbyAyNCAwIFI+PgpzdGFydHhyZWYKMzMwMjEKJSVFT0YK</inf:Document>
+						<inf:FormatDocument>PDF</inf:FormatDocument>
+						<inf:ImportTotal>0</inf:ImportTotal>
+						<inf:Resposta>2</inf:Resposta>
+					</inf:Informacio>
+					<inf0:InfDeutePICARequest
+xmlns:inf0="http://pica.gencat.net/atc/schemes/InfDeutePICARequest">
+						<inf0:Idioma>Català</inf0:Idioma>
+						<inf0:Nom>CRISTINA</inf0:Nom>
+						<inf0:NomComplet>CRISTINA SIALO SEAHE</inf0:NomComplet>
+						<inf0:Cognom1>SIALO</inf0:Cognom1>
+						<inf0:Cognom2>SEAHE</inf0:Cognom2>
+						<inf0:NumeroDocument>35073919T</inf0:NumeroDocument>
+						<inf0:TipusDocumentacio>NIF</inf0:TipusDocumentacio>
+					</inf0:InfDeutePICARequest>
+				</inf:InfDeutePICAResponse>
+			</res:DatosEspecificos>
+		</res:TransmisionDatos>
+	</res:Transmisiones>
+</res:Respuesta>
