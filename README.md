@@ -84,6 +84,8 @@ A continuació es descriu el missatge corresponent al bloc de dades específique
 
 #### 3.1.2.1	Dades d’error
 
+![Dades d'error](https://github.com/ConsorciAOC/VO-ATC/blob/main/images/3%201%202%201%20Dades%20d%E2%80%99error.png)
+
 | Element | Descripció |
 | --- | --- |
 | //PICAError/CodiError | Codi d’error informat per l’emissor. |
