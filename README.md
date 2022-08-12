@@ -1,6 +1,17 @@
 # VO-ATC
 
-# Introducció
+## INDEX
+
+- [1. Introducció](#1)
+- [2. Transmissions de dades disponibles](#2)
+- [3. Missatgeria del servei](#3)
+   * [3.1 Situació de deute d’un contribuent (ATC_INF_DEUTES_TMP)](#3.1)
+        * [3.1.1 Petició – dades genèriques](#3.1.1)
+		* [3.1.2 Petició – dades específiques](#3.1.2)
+		    *  [3.1.2.1 Dades d’error](#3.1.2.1)
+- [4. Joc de proves](#4)
+
+# Introducció <a name="1"></a>
 
 Aquest document detalla la missatgeria associada al servei de l’Agència Tributària de Catalunya (en endavant ATC).
 
@@ -8,7 +19,7 @@ Per poder realitzar la integració cal conèixer prèviament la següent documen
 *	Document del Servei Via Oberta.
 * Document de Missatgeria Genèrica de la PCI del Consorci AOC.
 
-# 2	Transmissions de dades disponibles
+# 2	Transmissions de dades disponibles <a name="2"></a>
 
 Les dades disponibles a través del servei són les que es presenten a continuació:
 
@@ -18,11 +29,11 @@ Emissor: ATC (Agència Tributària de Catalunya)
 |---|---|---|
 | ATC | ATC\_INF\_DEUTES\_TMP | Consultadesituaciódedeuted&#39;uncontribuenta Catalunya. |
 
-# 3	Missatgeria del servei
+# 3	Missatgeria del servei <a name="3"></a>
 
 A continuació es detalla la missatgeria corresponent a les modalitats de consum del producte ATC.
 
-## 3.1	Situació de deute d’un contribuent (ATC_INF_DEUTES_TMP)
+## 3.1	Situació de deute d’un contribuent (ATC_INF_DEUTES_TMP) <a name="3.1"></a>
 
 A partir de les dades d’una persona física (NIF o NIE) o una persona jurídica (CIF) informa si té o no deutes.
 
@@ -34,7 +45,7 @@ Les possibles respostes són:
 
 En cas de que el titular es localitzi, en la resposta s’inclou un document (PDF o WORD) amb el certificat de l’estat del deute.
 
-### 3.1.1	Petició – dades genèriques
+### 3.1.1	Petició – dades genèriques <a name="3.1.1"></a>
 
 Al bloc de dades genèriques de les peticions caldrà informar les dades del titular del qual es vol consultar la situació de deute.
 
@@ -59,7 +70,7 @@ Addicionalment, l’emisor final requereix que s’informin les dades del funcio
 
 No es necessari informar el bloc de dades específiques.
 
-### 3.1.2	Resposta – dades específiques
+### 3.1.2	Resposta – dades específiques <a name="3.1.2"></a>
 
 A continuació es descriu el missatge corresponent al bloc de dades específiques generat per l’emisor final de les dades.
 
@@ -82,7 +93,7 @@ A continuació es descriu el missatge corresponent al bloc de dades específique
 | ///InfDeutePICARequest/TipusDocumentacio | Tipus de documentació del titular informat a la petició. |
 | InfDeutePICAResponse/PICAError | Detalls de l’incidència en cas d’error processant la petició. Vegeu apartat 3.1.2.1. |
 
-#### 3.1.2.1	Dades d’error
+#### 3.1.2.1	Dades d’error <a name="3.1.2.1"></a>
 
 ![Dades d'error](https://github.com/ConsorciAOC/VO-ATC/blob/main/images/3%201%202%201%20Dades%20d%E2%80%99error.png)
 
@@ -93,7 +104,7 @@ A continuació es descriu el missatge corresponent al bloc de dades específique
 | //PICAError/Descripcio | Descripció de l'error. |
 | //PICAError/Causa | Traça de detall de l'error. |
 
-# 4 Joc de proves
+# 4 Joc de proves <a name="4"></a>
 
 | Tipus doc. | Documentació | Nom | Primer cognom | Segon cognom | Situació dedeute |
 | --- | --- | --- | --- | --- | --- |
@@ -105,3 +116,11 @@ A continuació es descriu el missatge corresponent al bloc de dades específique
 | CIF | 37824983B | JOSELUIS | MARCO | ABAD | Sensedeute |
 | NIF | 17141391C | MARIA DELC | MARCO | ABADIA | Sensedeute |
 | NIF | 37227164P | JOAQUINA | MARCO | ABELLA | Sensedeute |
+
+L'emissor final publica els següent [joc de proves a l'entorn de pre-producció][proves]
+ 
+[proves]: http://transversals.ctti.intranet.gencat.cat/sol-pica-iop-gene/
+ 
+![image](https://user-images.githubusercontent.com/32306731/137281698-9dfc2044-94f7-487f-a7d6-9a4e0707feb3.png) En cas de tindre problemes per accedir als jocs de proves, si us plau, obre un tiquet a través del [formulari][form]
+ 
+[form]:https://www.aoc.cat/portal-suport/peticio-integradors/idservei/integracio/
